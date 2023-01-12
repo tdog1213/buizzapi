@@ -2,7 +2,7 @@ const cheerio = require("cheerio")
 const axios = require("axios")
 const express = require("express")
 const app = express()
-app.listen(1000)
+app.listen(process.env.PORT || 3000)
 
 app.get("/company/:id", (req, expResp) => {
     console.log("e")
